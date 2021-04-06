@@ -39,8 +39,8 @@ public class Main {
         for (int i = 1; i <= m; i++) {
         	int theta = list.get(i-1)[0];
         	if (set.add(theta)) {
-        		// 预测为1=sum[m] - sum[i-1]
-        		// 预测为0=(i-1) - sum[i-1]
+        		// 预测为 1 = sum[m] - sum[i-1]
+        		// 预测为 0 = (i-1) - sum[i-1]
         		// 两者相加得到predict
 				int predict = sum[m] + i - 2 * sum[i-1] -1;
 				if (predict >= max) {
